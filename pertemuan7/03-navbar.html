@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>03 - Navbar - Sebelum</title>
+    <style>
+        /* CSS Reset Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333; /* Background gelap */
+            padding: 10px 20px; /* Padding */
+            display: flex; /* Flexbox */
+            justify-content: space-between; /* Logo di kiri, menu di kanan */
+            align-items: center; /* Vertikal center */
+        }
+
+        .logo {
+            color: #fff; /* Warna putih */
+            font-size: 24px; /* Ukuran font lebih besar */
+            text-decoration: none; /* Hilangkan garis bawah */
+        }
+
+        ul {
+            list-style: none; /* Hilangkan bullet point */
+            display: flex; /* Flexbox untuk menu horizontal */
+            gap: 20px; /* Jarak antar item menu */
+        }
+
+        ul li a {
+            color: #fff; /* Warna teks putih cerah */
+            text-decoration: none; /* Hilangkan garis bawah */
+            padding: 5px 10px; /* Padding link */
+            transition: color 0.3s ease, border-bottom 0.3s ease; /* Transisi efek hover */
+        }
+
+        ul li a:hover {
+            color: #ffcc00; /* Efek hover warna link */
+            border-bottom: 2px solid #ffcc00; /* Efek hover garis bawah buatan */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Beri background warna gelap pada <nav>, set padding, dan jadikan Flexbox dengan justify-content: space-between agar logo dan menu terpisah di kiri-kanan.
+    2. Hilangkan bullet point (list-style: none) pada <ul> dan jadikan Flexbox agar item menu berjejer horizontal. Beri jarak antar elemen (gap).
+    3. Pada logo (.logo), ubah warnanya jadi putih, besarkan font, dan hilangkan garis bawah.
+    4. Pada link menu <a>, hilangkan garis bawah, beri warna teks putih cerah, dan padding.
+    5. Tambahkan efek hover pada link menu (misal warnanya berubah atau muncul garis bawah buatan).
+    -->
+    <nav>
+        <a href="#" class="logo">MyWebsite</a>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
