@@ -144,4 +144,5 @@ body {
 
 .financial-table tr.total-row td {
   border-top: 2px solid #343a40;
+  text-align: right;
 }
