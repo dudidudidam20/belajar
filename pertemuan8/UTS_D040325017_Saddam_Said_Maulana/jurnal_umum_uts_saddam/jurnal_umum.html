@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="jurnal_umum.css">
 </head>
 <body>
-<div class="form-container">
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <div>
+            <div class="sidebar-header">
+                <h3>Menu Utama</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="/pertemuan8/UTS_D040325017_Saddam_Said_Maulana/dashboard_uts_saddam/dashboard.html">&gt; Dashboard</a></li>
+                <li class="active"><a href="/pertemuan8/UTS_D040325017_Saddam_Said_Maulana/jurnal_umum_uts_saddam/jurnal_umum.html">&gt; Jurnal</a></li>
+                <li><a href="#">&gt; Buku Besar</a></li>
+                <li><a href="/pertemuan8/UTS_D040325017_Saddam_Said_Maulana/laba_rugi_uts_saddam/laba_rugi.html">&gt; Laba Rugi</a></li>
+                <li><a href="#">&gt; Neraca</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <a href="/pertemuan8/UTS_D040325017_Saddam_Said_Maulana/login_uts_saddam/login.html">[Logout]</a>
+        </div>
+    </aside>
+
+    <main class="form-container">
         <h2>FORM INPUT JURNAL UMUM</h2>
         
         <form action="#" method="POST">
-            <!-- Tanggal Transaksi -->
             <div class="form-group">
                 <label for="tanggal">Tanggal Transaksi</label>
                 <input type="date" id="tanggal" name="tanggal" required>
             </div>
 
-            <!-- No. Bukti -->
             <div class="form-group">
                 <label for="no_bukti">No. Bukti</label>
                 <input type="text" id="no_bukti" name="no_bukti" placeholder="Masukkan nomor bukti transaksi" required>
             </div>
 
-            <!-- Keterangan -->
             <div class="form-group">
                 <label for="keterangan">Keterangan</label>
                 <textarea id="keterangan" name="keterangan" placeholder="Masukkan keterangan transaksi" required></textarea>
             </div>
 
-            <!-- Nama Akun -->
             <div class="form-group">
                 <label for="nama_akun">Nama Akun</label>
                 <select id="nama_akun" name="nama_akun" required>
@@ -42,7 +57,6 @@
                 </select>
             </div>
 
-            <!-- Posisi Saldo (Radio Button) -->
             <div class="form-group">
                 <label>Posisi Saldo</label>
                 <div class="radio-group">
@@ -51,18 +65,17 @@
                 </div>
             </div>
 
-            <!-- Nominal (Rp) -->
             <div class="form-group">
                 <label for="nominal">Nominal (Rp)</label>
                 <input type="number" id="nominal" name="nominal" placeholder="0" min="0" required>
             </div>
 
-            <!-- Tombol Aksi -->
             <div class="form-actions">
                 <button type="submit" class="btn">[ SIMPAN TRANSAKSI ]</button>
                 <button type="reset" class="btn">[ BATAL ]</button>
             </div>
         </form>
-    </div>
+    </main>
+</div>
 </body>
 </html>

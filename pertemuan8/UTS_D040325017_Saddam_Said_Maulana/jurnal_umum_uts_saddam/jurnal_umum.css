@@ -10,9 +10,71 @@ body {
   color: #333;
 }
 
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #212517;
+  color: #ffff17;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #373b17;
+}
+
+.sidebar-header h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px 0;
+  flex-grow: 1;
+}
+
+.sidebar-menu li {
+  padding: 10px 20px;
+}
+
+.sidebar-menu li a {
+  color: #ffff17;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.sidebar-menu li.active,
+.sidebar-menu li:hover {
+  background-color: #343a17;
+}
+
+.sidebar-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #373b17;
+}
+
+.sidebar-footer a {
+  color: #ffff17;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar-footer a:hover {
+  text-decoration: underline;
+}
+
 .form-container {
   max-width: 700px;
-  background-color: #ffff17;
+  background-color: #ffffff;
   padding: 30px;
   margin: 30px auto;
   border: 1px solid #dee217;
@@ -48,10 +110,10 @@ body {
 .form-group textarea {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid #ced417;
+  border: 1px solid #212517;
   border-radius: 4px;
   font-size: 14px;
-  background-color: #ffff17;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -73,12 +135,10 @@ body {
   cursor: pointer;
 }
 
-/* Tombol Aksi Form */
 .form-actions {
   text-align: center;
   margin-top: 25px;
   padding-top: 15px;
-  border-top: 1px solid #dee217;
 }
 
 .btn {
