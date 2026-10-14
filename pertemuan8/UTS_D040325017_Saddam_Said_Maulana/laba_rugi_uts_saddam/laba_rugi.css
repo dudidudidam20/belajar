@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f617;
+  color: #333;
+}
+
+.table-container {
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 30px auto;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.report-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.report-header h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #212529;
+  margin-top: 5px;
+}
+
+.report-header p {
+  font-size: 14px;
+  color: #495057;
+  margin-top: 5px;
+}
+
+.financial-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.financial-table th,
+.financial-table td {
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+}
+
+.financial-table th {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.financial-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.financial-table td.text-center {
+  text-align: center;
+}
+
+.financial-table td.text-right {
+  text-align: right;
+}
+
+.financial-table tr.total-row {
+  font-weight: bold;
+  background-color: #e9ecef;
+}
+
+.financial-table tr.total-row td {
+  border-top: 2px solid #343a40;
+}

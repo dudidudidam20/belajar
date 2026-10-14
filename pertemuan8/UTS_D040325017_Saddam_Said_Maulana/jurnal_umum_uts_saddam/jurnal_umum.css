@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f617;
+  color: #333;
+}
+
+.form-container {
+  max-width: 700px;
+  background-color: #ffff17;
+  padding: 30px;
+  margin: 30px auto;
+  border: 1px solid #dee217;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #212517;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  width: 160px;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+}
+
+.form-group input[type="date"],
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced417;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffff17;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 70px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.radio-group label {
+  width: auto;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Tombol Aksi Form */
+.form-actions {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #dee217;
+}
+
+.btn {
+  background-color: #343a17;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #212517;
+}
